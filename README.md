@@ -5,7 +5,7 @@ Simple Go CLI to pull heartrate and interval data from bluetooth heart rate sens
 
 ## Compile & Run
 
-* Ensure you have golang installed from https://go.dev
+Ensure you have golang installed from https://go.dev
 
 Scan for peripherals first -- find your HRM UUID
 
@@ -35,3 +35,12 @@ Connect and stream data indefinitely:
     2022/11/07 14:14:28 bpm=56.000000 num_rr_intervals=1 rr_intervals_ms=[1044.921875]
     2022/11/07 14:14:30 bpm=56.000000 num_rr_intervals=0 rr_intervals_ms=[]
     2022/11/07 14:14:30 bpm=55.000000 num_rr_intervals=2 rr_intervals_ms=[1000.9765625 1042.96875]
+
+
+The rr_interval data I /think/ is calculated correctly, sometimes it's present or not depending on device and unknown other conditions.
+
+
+## Run prebuilt binary (Mac M1)
+
+    $ bin/kenko_bt_grabber.macos.m1 -scan
+    $ bin/kenko_bt_grabber.macos.m1  -stream 43bd4f12-09e5-303d-c21e-73270d041f7c 
