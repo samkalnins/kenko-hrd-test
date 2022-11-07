@@ -1,4 +1,4 @@
-# Kenko Heart Rate Wearable Bluetooth Grabber
+# Kenkō Heart Rate Wearable Bluetooth Grabber
 
 Simple Go CLI to pull heartrate and interval data from bluetooth heart rate sensors.
 

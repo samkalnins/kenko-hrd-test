@@ -58,6 +58,7 @@ func bluetooth_packet_parse(b []byte) {
 		}
 	}
 	log.Printf("bpm=%0f num_rr_intervals=%d rr_intervals_ms=%v", hrm_bpm, num_rr_values, rr_intervals)
+	//fmt.Printf("%d,%0f\n", time.Now().Unix(), hrm_bpm)
 }
 
 func streamFromDevice(addr bluetooth.Addresser, name string) {
