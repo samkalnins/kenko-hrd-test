@@ -43,4 +43,9 @@ The rr_interval data I /think/ is calculated correctly, sometimes it's present o
 ## Run prebuilt binary (Mac M1)
 
     $ bin/kenko_bt_grabber.macos.m1 -scan
-    $ bin/kenko_bt_grabber.macos.m1  -stream 43bd4f12-09e5-303d-c21e-73270d041f7c 
+    $ bin/kenko_bt_grabber.macos.m1 -stream 43bd4f12-09e5-303d-c21e-73270d041f7c 
+
+
+## Example data
+
+You can find some heart rate data dumps from a range of sensors in the `example_data` directory.
